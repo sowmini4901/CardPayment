@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.main-name {
+    color: #0080FF;
+}
+
+.food-munch-logo {
+    width: 80px;
+    height: 70px;
+}
+
+#navItem1 {
+    color: #323f4b;
+    font-family: "Comic Sans MS";
+}
+
+#navItem2 {
+    color: #323f4b;
+    font-family: "Comic Sans MS";
+}
+
+#navItem3 {
+    color: #323f4b;
+    font-family: "Comic Sans MS";
+}
+
+#navItem4 {
+    color: #323f4b;
+    font-family: "Comic Sans MS";
+}
+
+.banner-section-bg-container {
+    background-image: url("https://images.unsplash.com/photo-1556740772-1a741367b93e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-family: "Comic Sans MS";
+    font-size: 45px;
+    font-weight: 300;
+}
+
+.banner-caption {
+    color: #f5f7fa;
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.custom-button {
+    color: white;
+    background-color: #d0b200;
+    width: 130px;
+    height: 45px;
+    border-width: 0;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.custom-outline-button {
+    color: #d0b200;
+    background-color: transparent;
+    width: 130px;
+    height: 45px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d0b200;
+    border-radius: 8px;
+}
+
+.form-control {
+    width:300x;
+    fill: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+   
+    font-size: 18px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+form{
+    display: inline-block;
+    width: 400px;
+}
+.modal-header {
+    
+    color: floralwhite; }
+    .modal-header .close {
+      color: floralwhite; }
+  
+  .modal-body {
+    background: white; 
+    text-align: center;
+    height: 700px;}
+    .btn-default
+    {
+    background-color: #000A12;
+    color:#FFF;
+    border-color: #CFCFCF;
+    }
+    
+    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+    background-color: #CFCFCF;
+    color:#FFF;
+    border-color: #CFCFCF;
+    }

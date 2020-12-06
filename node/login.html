@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand text-warning" href="#">Card Payment Security System </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="navItem1" href="#">
+                        Why Choose Us?
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">Looking for Secure Payment?</h1>
+            <p class="banner-caption mb-4">You are at right place...</p>
+            <button class="custom-button" id="register">Register</button>
+            <button class="custom-outline-button" id="login">Login</button>
+        </div>
+    </div>
+    
+    <div id="reachoutModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg " role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100 font-weight-bold text-center" style="color:black">Register</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                  
+                    <form action="buy.html" method="POST">
+                        <div class="row text-center">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Name" name="Firstname" required>
+                            </div>
+                        </div>
+                        
+                            <div class="row"> 
+                                <div class="col">
+                                <input type="text" class="form-control"  placeholder="Last Name" name="lastname" required>
+                              </div>
+                            </div>
+      
+                            <div class="row"> 
+                                <div class="col">
+                                <input type="text" class="form-control"  placeholder="email id" name="email" required>
+                              </div>
+                            </div>
+
+                            <div class="row"> 
+                                <div class="col">
+                                <input type="password" class="form-control"  placeholder="password" name="password" required>
+                              </div>
+                            </div>
+     
+                         <div class="form-group row">
+                            <div class="col-sm-10 offset-sm-2">
+                                
+                                <button type="button" class="btn btn-secondary btn-lg ml-auto align-self-center" data-dismiss="modal">Cancel</button>
+                                           
+                               
+                                <button type="submit" class="btn btn-success btn-lg ml-1">
+                                  Register
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </form>
+                
+                    
+                </div>
+      
+      
+            </div>
+        </div>
+      </div>
+    
+    
+
+      <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg " role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title w-100 font-weight-bold text-center" style="color:black">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="buy.html" method="POST">
+                        
+                            <div class="row"> 
+                                <div class="col">
+                                <input type="text" class="form-control"  placeholder="email id" name="email" required>
+                              </div>
+                            </div>
+
+                            <div class="row"> 
+                                <div class="col">
+                                <input type="password" class="form-control"  placeholder="password" name="password" required>
+                              </div>
+                            </div>
+     
+                         <div class="form-group row">
+                            <div class="col-sm-10 offset-sm-2">
+                                
+                                <button type="button" class="btn btn-secondary btn-lg ml-auto align-self-center" data-dismiss="modal">Cancel</button>
+                                           
+                               
+                                <button type="submit" class="btn btn-success btn-lg ml-1">
+                                  Login
+                                </button>
+                            </div>
+                        </div>
+                    
+                    </form>
+                
+                    
+                </div>
+      
+      
+            </div>
+        </div>
+      </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script>
+    $("#register").click(function(){
+        $('#reachoutModal').modal('toggle')
+    });
+
+    $("#login").click(function(){
+        $('#loginModal').modal('toggle')
+    });
+  /*function open(){
+    alert("You are successfully registered");
+  }*/
+</script>
+</body>
+
+</html>
