@@ -73,6 +73,6 @@ app.post('/example', (req, res) => {
 
 const port = 8080;
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log(`Server running on port${port}`);
 });
